@@ -1,0 +1,127 @@
+body {
+  background-color: aliceblue(42, 32, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(42, 32, 232, 1) 0%,
+    rgba(31, 175, 171, 1) 33%,
+    rgba(8, 47, 129, 1) 62%,
+    rgba(5, 156, 126, 1) 100%,
+    rgba(26, 121, 9, 1) 100%,
+    rgba(243, 0, 255, 1) 100%
+  );
+
+  .top-dest h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(170, 225, 31);
+    margin-top: 45px;
+    font-size: 60px;
+    line-height: 65px;
+    font-weight: 900;
+    text-shadow: 2px 2px black;
+  }
+  .top-desti {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+  }
+  .text-sec {
+    width: 350px;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-top: 40px;
+  }
+  img {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .text-wrapper {
+    margin-top: 5px;
+    display: flex;
+    column-gap: 180px;
+    margin-left: 15px;
+    color: #5e6282;
+  }
+
+  .arrow-text {
+    margin-top: 10px;
+    width: 300px;
+    column-gap: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-size: 12px;
+  }
+  .arrow-icon {
+    width: 12px;
+    height: 30px;
+  }
+  .social-media img {
+    width: 50px;
+    height: 50px;
+    border-radius: 11px;
+    margin-top: 40px;
+  }
+
+  .geolab-logo {
+    background-color: purple;
+    border-radius: 11px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    .top-dest h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+    .top-desti {
+      flex-wrap: wrap;
+      margin-top: 0px;
+      display: flex;
+      justify-content: center;
+    }
+    .text-sec {
+      width: 150px;
+    }
+    .text-sec {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    .text-wrapper {
+      column-gap: 25px;
+      margin-left: 10px;
+      font-size: 10px;
+    }
+    .rome {
+      p {
+        font-size: 10px;
+      }
+    }
+    .arrow-text {
+      img {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    float: none;
+    column-gap: 8px;
+
+    a,
+    img {
+      display: flex;
+      height: 25px;
+      width: 25px;
+    }
+  }
+}

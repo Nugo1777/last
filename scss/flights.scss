@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(32, 232, 183);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 232, 183, 1) 0%,
+    rgba(76, 217, 213, 1) 33%,
+    rgba(54, 225, 238, 1) 62%,
+    rgba(5, 156, 126, 1) 100%,
+    rgba(26, 121, 9, 1) 100%,
+    rgba(0, 255, 196, 1) 100%
+  );
+}
+
+.flights-1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  column-gap: 30px;
+  font-size: 18px;
+  color: rgb(40, 4, 102);
+}
+
+img {
+  border-radius: 15px;
+  transition: 0.3s linear;
+}
+img:hover {
+  transform: scale(0.9);
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
+  border-radius: 11px;
+  margin-top: 40px;
+}
+.geolab-logo {
+  background-color: purple;
+  border-radius: 11px;
+}
+
+@media (max-width: 768px) {
+  .flights-1 {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  p {
+    font-size: 10px;
+  }
+
+  footer .social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    float: none;
+    column-gap: 8px;
+
+    a,
+    img {
+      display: flex;
+      height: 25px;
+      width: 25px;
+      column-gap: 10px;
+    }
+  }
+}
